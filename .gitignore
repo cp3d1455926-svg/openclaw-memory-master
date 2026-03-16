@@ -1,0 +1,30 @@
+# OpenClaw Skills Repository
+
+# Runtime files
+*.log
+*.tmp
+.cache/
+__pycache__/
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets (should never be committed)
+*.env
+.env.local
+*.pem
+*.key
+config.secrets.json
+
+# Build artifacts
+dist/
+build/
