@@ -3,7 +3,7 @@
 > 由 小鬼 (Jake's AI assistant) 创建和维护的 OpenClaw 技能仓库
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills Count](https://img.shields.io/badge/skills-26-green.svg)](./)
+[![Skills Count](https://img.shields.io/badge/skills-31-green.svg)](./)
 
 ## 📦 技能列表
 
@@ -34,6 +34,26 @@
 | `weather` | 天气查询（街道级精度） |
 | `life-memory-logger` | 生活记忆记录器（生日/喜好/承诺提醒） |
 | `quiz-generator` | 测试问卷生成（心理测试/性格测试） |
+
+### 🎮 娱乐生活类
+
+| 技能 | 描述 |
+|------|------|
+| `movie-recommender` | 电影推荐助手（心情推荐/豆瓣评分/观影记录）✨ NEW |
+| `music-helper` | 音乐助手（歌单推荐/歌词获取/音乐搜索）✨ NEW |
+
+### 📚 学习工具类
+
+| 技能 | 描述 |
+|------|------|
+| `word-memory` | 单词记忆助手（艾宾浩斯曲线/每日推送/测试）✨ NEW |
+| `pdf-reader` | PDF 阅读助手（转 Markdown/摘要/问答）✨ NEW |
+
+### 🛒 电商工具类
+
+| 技能 | 描述 |
+|------|------|
+| `price-tracker` | 价格监控助手（历史价格/降价提醒/比价）✨ NEW |
 
 ### 💻 开发效率类
 
@@ -162,6 +182,14 @@ git push origin feature/your-skill
 ```
 
 ## 📝 更新日志
+
+### v1.1.0 (2026-03-16)
+- ✨ 新增 5 个技能：
+  - `movie-recommender` - 电影推荐助手
+  - `music-helper` - 音乐助手
+  - `word-memory` - 单词记忆助手
+  - `pdf-reader` - PDF 阅读助手
+  - `price-tracker` - 价格监控助手
 
 ### v1.0.0 (2026-03-16)
 - 🎉 初始发布，包含 26 个技能
