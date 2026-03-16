@@ -1,15 +1,15 @@
 # 👻 Ghost Skills - OpenClaw 技能合集
 
-> 🎨 **35 个原创技能** | 📚 **38 个完整文档** | 🚀 **开箱即用**
+> 🎨 **40 个原创技能** | 📚 **43 个完整文档** | 🚀 **开箱即用**
 > 
-> 🎨 **35 Original Skills** | 📚 **38 Complete Docs** | 🚀 **Ready to Use**
+> 🎨 **40 Original Skills** | 📚 **43 Complete Docs** | 🚀 **Ready to Use**
 
 由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
 Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills Count](https://img.shields.io/badge/skills-31-green.svg)](./)
+[![Skills Count](https://img.shields.io/badge/skills-43-green.svg)](./)
 [![Stars](https://img.shields.io/github/stars/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/stargazers)
 [![Issues](https://img.shields.io/github/issues/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/issues)
 
@@ -19,13 +19,13 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 **中文**
 
-👻 Ghost Skills 是一个包含 38 个 OpenClaw 技能的合集，其中 35 个为原创作品。
+👻 Ghost Skills 是一个包含 43 个 OpenClaw 技能的合集，其中 40 个为原创作品。
 
 涵盖内容创作、新闻资讯、生活工具、娱乐、学习、电商、开发效率、知识管理、安全进化、旅行规划、工作效率、个人成长等 12 大类别。
 
 **English**
 
-👻 Ghost Skills is a collection of 38 OpenClaw skills, with 35 original creations.
+👻 Ghost Skills is a collection of 43 OpenClaw skills, with 40 original creations.
 
 Covers 12 categories: content creation, news, life tools, entertainment, learning, e-commerce, development efficiency, knowledge management, safety evolution, travel planning, productivity, and personal growth.
 
@@ -65,9 +65,9 @@ Covers 12 categories: content creation, news, life tools, entertainment, learnin
 
 | 指标 Metric | 数量 Count |
 |------------|-----------|
-| 总技能 Total Skills | 38 |
-| 原创技能 Original Skills | 35 (92%) |
-| Python 实现 Python Implementation | 12 |
+| 总技能 Total Skills | 43 |
+| 原创技能 Original Skills | 40 (93%) |
+| Python 实现 Python Implementation | 20 |
 | API 对接 API Integration | 3 (豆瓣/网易云/电商) |
 | 文档覆盖 Documentation | 100% |
 | 测试通过率 Test Pass Rate | 100% |
@@ -290,6 +290,14 @@ git push origin feature/your-skill
 ```
 
 ## 📝 更新日志
+
+### v1.3.0 (2026-03-16)
+- ✨ 完善 3 个高优先级技能：
+  - `official-account-assistant` - 公众号助手（AI 降味/标题生成）
+  - `xiaohongshu-assistant` - 小红书助手（文案生成/话题推荐）
+  - `file-super-assistant` - 文件助手（Word/Excel/PPT 创建）
+- 🐍 Python 实现：20 个
+- 📊 技能总数：43 个
 
 ### v1.2.0 (2026-03-16)
 - ✨ 新增 7 个技能：
