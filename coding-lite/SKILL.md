@@ -1,29 +1,29 @@
 ---
 name: coding-lite
-description: 轻量级编码助手，支持 Python 脚本生成与执行、Excel/WPS 函数自动化、小程序代码生成、SQL 查询助手。快速响应，不占用过多 context。
+description: Lightweight coding assistant supporting Python script generation and execution, Excel/WPS function automation, mini-program code generation, SQL query assistant. Fast response, minimal context usage.
 ---
 
-# Coding-Lite 轻量级编码助手
+# Coding-Lite - Lightweight Coding Assistant
 
-## 触发场景
+## Trigger Scenarios
 
-当用户需要快速生成代码、自动化脚本、数据处理或查询时使用此技能。适合轻量级、高频的编码需求。
+Use this skill when users need quick code generation, automation scripts, data processing, or queries. Suitable for lightweight, high-frequency coding needs.
 
-## 技术范围
+## Technical Scope
 
-### 1. Python 脚本生成与执行 🐍
+### 1. Python Script Generation & Execution 🐍
 
-**支持场景：**
-- 文件批量处理（重命名、格式转换）
-- 数据抓取（网页、API）
-- 数据分析（pandas、numpy）
-- 自动化办公（邮件、文件操作）
-- 简单爬虫
-- 文本处理
+**Supported Scenarios:**
+- Batch file processing (renaming, format conversion)
+- Data scraping (web, API)
+- Data analysis (pandas, numpy)
+- Office automation (email, file operations)
+- Simple web scraping
+- Text processing
 
-**示例：**
+**Example:**
 ```python
-# 批量重命名文件
+# Batch rename files
 import os
 for i, f in enumerate(os.listdir('.')):
     os.rename(f, f'img_{i:03d}.jpg')
@@ -31,39 +31,39 @@ for i, f in enumerate(os.listdir('.')):
 
 ---
 
-### 2. Excel / WPS 函数自动化 📊
+### 2. Excel / WPS Function Automation 📊
 
-**支持场景：**
-- 复杂公式编写（VLOOKUP、INDEX/MATCH、数组公式）
-- 数据透视表配置
-- 条件格式设置
-- VBA 宏脚本
-- WPS 自动化（Python for WPS）
+**Supported Scenarios:**
+- Complex formula writing (VLOOKUP, INDEX/MATCH, array formulas)
+- Pivot table configuration
+- Conditional formatting
+- VBA macro scripts
+- WPS automation (Python for WPS)
 
-**常用公式模板：**
+**Common Formula Templates:**
 ```excel
 =VLOOKUP(A2,Sheet2!$A:$D,4,FALSE)
 =INDEX($C:$C,MATCH(1,(A2=$A:$A)*(B2=$B:$B),0))
-=SUMPRODUCT((A2:A100="条件")*(B2:B100))
+=SUMPRODUCT((A2:A100="criteria")*(B2:B100))
 ```
 
 ---
 
-### 3. 小程序代码生成 📱
+### 3. Mini-Program Code Generation 📱
 
-**支持平台：**
-- 微信小程序
-- 支付宝小程序
-- 抖音小程序
+**Supported Platforms:**
+- WeChat Mini Program
+- Alipay Mini Program
+- Douyin Mini Program
 
-**支持内容：**
-- 页面结构（WXML/AXML）
-- 样式（WXSS/ACSS）
-- 逻辑（JavaScript/TypeScript）
-- 配置文件（app.json）
-- 云函数
+**Supported:**
+- Page structure (WXML/AXML)
+- Styles (WXSS/ACSS)
+- Logic (JavaScript/TypeScript)
+- Configuration files (app.json)
+- Cloud functions
 
-**示例（微信小程序）：**
+**Example (WeChat Mini Program):**
 ```javascript
 // pages/index/index.js
 Page({
@@ -76,31 +76,31 @@ Page({
 
 ---
 
-### 4. SQL 查询助手 💾
+### 4. SQL Query Assistant 💾
 
-**支持数据库：**
+**Supported Databases:**
 - MySQL
 - PostgreSQL
 - SQLite
 - SQL Server
 - Oracle
 
-**支持场景：**
-- 基础查询（SELECT、JOIN、GROUP BY）
-- 复杂查询（子查询、窗口函数）
-- 数据操作（INSERT、UPDATE、DELETE）
-- 表结构查询
-- 性能优化建议
+**Supported Scenarios:**
+- Basic queries (SELECT, JOIN, GROUP BY)
+- Complex queries (subqueries, window functions)
+- Data operations (INSERT, UPDATE, DELETE)
+- Table structure queries
+- Performance optimization suggestions
 
-**示例：**
+**Example:**
 ```sql
--- 查询每个部门的平均工资
+-- Query average salary by department
 SELECT dept, AVG(salary) as avg_sal
 FROM employees
 GROUP BY dept
 ORDER BY avg_sal DESC;
 
--- 窗口函数示例
+-- Window function example
 SELECT name, dept, salary,
        RANK() OVER (PARTITION BY dept ORDER BY salary DESC) as rank
 FROM employees;
@@ -108,65 +108,69 @@ FROM employees;
 
 ---
 
-## 使用原则
+## Usage Principles
 
-### ✅ 适合的场景
-- 快速原型/脚本
-- 一次性任务自动化
-- 数据查询/处理
-- 学习/参考代码
-- 简单功能实现
+### ✅ Suitable Scenarios
+- Quick prototypes/scripts
+- One-time task automation
+- Data query/processing
+- Learning/reference code
+- Simple feature implementation
 
-### ❌ 不适合的场景
-- 大型项目开发（需要完整工程化）
-- 高并发/高性能要求
-- 复杂系统架构
-- 生产环境关键代码
-
----
-
-## 输出规范
-
-### 代码格式
-- 简洁优先，避免过度设计
-- 添加必要注释
-- 标注依赖和运行环境
-- 提供使用示例
-
-### 安全提示
-- 标注潜在安全风险（如 SQL 注入）
-- 敏感操作需二次确认
-- 不生成恶意代码
+### ❌ Unsuitable Scenarios
+- Large-scale projects (need full engineering)
+- High concurrency/performance requirements
+- Complex system architecture
+- Production critical code
 
 ---
 
-## 快速参考
+## Output Standards
 
-### Python 常用命令
+### Code Format
+- Simplicity first, avoid over-engineering
+- Add necessary comments
+- Label dependencies and runtime environment
+- Provide usage examples
+
+### Security Notes
+- Label potential security risks (e.g., SQL injection)
+- Sensitive operations require二次 confirmation
+- No malicious code generation
+
+---
+
+## Quick Reference
+
+### Python Common Commands
 ```bash
-python script.py          # 运行脚本
-pip install package       # 安装依赖
-python -m venv venv       # 创建虚拟环境
+python script.py          # Run script
+pip install package       # Install dependency
+python -m venv venv       # Create virtual environment
 ```
 
-### Excel 快捷键
+### Excel Shortcuts
 ```
-Ctrl + `          显示公式
-Ctrl + Shift + ↓  选中区域
-Alt + =           自动求和
+Ctrl + `          Show formulas
+Ctrl + Shift + ↓  Select range
+Alt + =           Auto sum
 ```
 
-### SQL 调试
+### SQL Debugging
 ```sql
-EXPLAIN SELECT ...    -- 查看执行计划
-SHOW WARNINGS;        -- 查看警告
+EXPLAIN SELECT ...    -- View execution plan
+SHOW WARNINGS;        -- View warnings
 ```
 
 ---
 
-## 注意事项
+## Notes
 
-- 执行代码前请确认环境安全
-- 涉及数据的操作请先备份
-- 生产环境代码需要完整测试
-- 遵守开源许可证要求
+- Confirm environment safety before executing code
+- Backup data before operations
+- Production code needs complete testing
+- Follow open source license requirements
+
+---
+
+*Made with 👻 by Ghost & Jake*

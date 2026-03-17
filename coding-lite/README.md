@@ -1,56 +1,50 @@
-# 💻 Coding Lite - 轻量级编码助手
+# 💻 Coding Lite - Lightweight Coding Assistant
 
-## 📖 功能说明
+## 📖 Introduction
 
-支持 Python 脚本生成与执行、Excel/WPS 函数自动化、小程序代码生成、SQL 查询助手。
+Supports Python script generation and execution, Excel/WPS function automation, mini-program code generation, SQL query assistant.
 
-## 🚀 使用方法
+## 🚀 Usage
 
-### 在 OpenClaw 中使用
+### Use in OpenClaw
 
 ```
-帮我写个 Python 脚本读取 Excel
-Excel 怎么求平均值
-写个微信小程序登录页面
-SQL 查询昨天的数据
+Help me write a Python script to read Excel
+How to calculate average in Excel
+Write a WeChat mini-program login page
+SQL query for yesterday's data
 ```
 
-## 📁 文件结构
+## 📁 File Structure
 
 ```
 coding-lite/
-├── SKILL.md              # 技能描述
-└── README.md             # 本文件
+├── SKILL.md              # Skill description
+└── README.md             # This file
 ```
 
-## 📊 示例输出
+## 📊 Example Output
 
 ```python
-# Python 读取 Excel
+# Python read Excel
 import pandas as pd
-
 df = pd.read_excel('data.xlsx')
 print(df.head())
-
-# Excel 函数
-=AVERAGE(A1:A10)  # 求平均值
-=SUMIF(A:A,"苹果",B:B)  # 条件求和
 ```
 
-## 🛠️ 功能列表
+## 🛠️ Features
 
-- [x] Python 脚本生成
-- [x] Excel 函数
-- [x] 小程序代码
-- [x] SQL 查询
-- [ ] 代码解释
-- [ ] Bug 修复
-
-## 📝 更新日志
-
-### v1.0.0
-- 🎉 初始版本
+- [x] Python script generation
+- [x] Excel/WPS automation
+- [x] Mini-program code
+- [x] SQL query assistant
+- [ ] Code review
+- [ ] Debugging help
 
 ## 📄 License
 
 MIT License
+
+---
+
+*Made with 👻 by Ghost & Jake*

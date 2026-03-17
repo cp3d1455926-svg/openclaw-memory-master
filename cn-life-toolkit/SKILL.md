@@ -1,149 +1,153 @@
 ---
 name: cn-life-toolkit
-description: 中国生活服务工具包，支持天气查询（街道级）、限行提醒、油价查询、快递物流跟踪、公交换乘查询等日常生活服务。
+description: China life services toolkit supporting weather queries (street-level), traffic restriction reminders, fuel price queries, express delivery tracking, bus transfer queries, and other daily life services.
 ---
 
-# CN-Life Toolkit 中国生活服务工具包
+# CN-Life Toolkit
 
-## 触发场景
+## Trigger Scenarios
 
-当用户需要查询中国本地生活服务信息时使用此技能，包括天气、交通、快递、油价等日常需求。
+Use this skill when users need to query local life service information in China, including weather, traffic, express delivery, fuel prices, and other daily needs.
 
-## 功能清单
+## Features
 
-### 1. 天气查询 🌤️
-**精度：** 街道级别
+### 1. Weather Query 🌤️
+**Accuracy:** Street level
 
-**支持内容：**
-- 实时天气（温度、湿度、风力、空气质量）
-- 逐小时预报（24 小时）
-- 逐日预报（7-15 天）
-- 灾害预警（暴雨、台风、雾霾等）
-- 生活指数（穿衣、洗车、运动、紫外线）
+**Supported:**
+- Real-time weather (temperature, humidity, wind, air quality)
+- Hourly forecast (24 hours)
+- Daily forecast (7-15 days)
+- Disaster warnings (rainstorm, typhoon, smog, etc.)
+- Life index (clothing, car wash, sports, UV)
 
-**数据源：**
-- 中国天气网
-- 中央气象台
-- 和风天气 API
-
----
-
-### 2. 限行提醒 🚗
-**支持城市：** 北京、上海、广州、深圳、杭州、成都等
-
-**支持内容：**
-- 今日限行尾号
-- 限行时间段
-- 限行区域
-- 外地车限行政策
-- 特殊天气/活动临时限行
-
-**数据源：**
-- 各地交管局官网
-- 高德/百度地图 API
+**Data Sources:**
+- China Weather Network
+- National Meteorological Center
+- QWeather API
 
 ---
 
-### 3. 油价查询 ⛽
-**更新频率：** 实时
+### 2. Traffic Restriction Reminder 🚗
+**Supported Cities:** Beijing, Shanghai, Guangzhou, Shenzhen, Hangzhou, Chengdu, etc.
 
-**支持内容：**
-- 各省市最新油价（92#/95#/98#汽油、0#柴油）
-- 油价调整预测
-- 历史油价走势
-- 周边加油站查询
+**Supported:**
+- Today's restricted license plate numbers
+- Restriction time periods
+- Restricted areas
+- Non-local vehicle restriction policies
+- Special weather/event temporary restrictions
 
-**数据源：**
-- 国家发改委
-- 各省市物价局
-
----
-
-### 4. 快递物流跟踪 📦
-**支持快递公司：** 顺丰、中通、圆通、申通、韵达、EMS、京东等主流快递
-
-**支持内容：**
-- 物流轨迹查询
-- 预计送达时间
-- 快递员联系方式
-- 异常件提醒
-
-**数据源：**
-- 快递 100 API
-- 各快递公司官方接口
+**Data Sources:**
+- Local Traffic Management Bureau websites
+- Gaode/Baidu Maps API
 
 ---
 
-### 5. 公交换乘查询 🚌
-**支持城市：** 全国主要城市
+### 3. Fuel Price Query ⛽
+**Update Frequency:** Real-time
 
-**支持内容：**
-- 公交/地铁换乘方案
-- 实时公交到站
-- 地铁首末班车时间
-- 票价/用时估算
-- 步行导航
+**Supported:**
+- Latest fuel prices by province/city (92#/95#/98# gasoline, 0# diesel)
+- Fuel price adjustment predictions
+- Historical fuel price trends
+- Nearby gas station queries
 
-**数据源：**
-- 高德地图 API
-- 百度地图 API
-- 各地公交集团
+**Data Sources:**
+- National Development and Reform Commission
+- Provincial Price Bureaus
 
 ---
 
-## 使用示例
+### 4. Express Delivery Tracking 📦
+**Supported Companies:** SF, ZTO, YTO, STO, Yunda, EMS, JD, and other major carriers
 
-### 天气查询
+**Supported:**
+- Logistics trajectory query
+- Estimated delivery time
+- Courier contact information
+- Abnormal package alerts
+
+**Data Sources:**
+- Kuaidi 100 API
+- Official carrier interfaces
+
+---
+
+### 5. Bus Transfer Query 🚌
+**Supported Cities:** Major cities nationwide
+
+**Supported:**
+- Bus/subway transfer routes
+- Real-time bus arrival
+- Subway first/last train times
+- Fare/time estimates
+- Walking navigation
+
+**Data Sources:**
+- Gaode Maps API
+- Baidu Maps API
+- Local transit authorities
+
+---
+
+## Usage Examples
+
+### Weather Query
 ```
-用户：北京朝阳区明天天气怎么样？
-助手：查询中国天气网...
-📍 北京朝阳区 | 3 月 15 日
-☀️ 晴转多云
+User: What's the weather like in Chaoyang, Beijing tomorrow?
+Assistant: Querying China Weather Network...
+📍 Beijing Chaoyang | March 15
+☀️ Sunny to cloudy
 🌡️ 8°C ~ 18°C
-💨 北风 2-3 级
-💧 湿度 35%
-🌫️ AQI 45 (优)
-👕 穿衣建议：薄外套
+💨 North wind 2-3 level
+💧 Humidity 35%
+🌫️ AQI 45 (Good)
+👕 Clothing suggestion: Light jacket
 ```
 
-### 限行提醒
+### Traffic Restriction
 ```
-用户：今天北京限行吗？
-助手：查询北京市交管局...
-🚗 北京限行提醒 | 3 月 14 日 周五
-🔢 限行尾号：4 和 9
-⏰ 时间：7:00-20:00
-🗺️ 区域：五环内（不含五环）
-⚠️ 外地车：需办理进京证
-```
-
-### 快递查询
-```
-用户：帮我查一下快递 SF1234567890
-助手：查询快递 100...
-📦 顺丰 SF1234567890
-📍 当前：北京市朝阳区 XX 营业部
-🚚 派送中，预计今天 18:00 前送达
-👤 快递员：张三 138****1234
+User: Is there traffic restriction in Beijing today?
+Assistant: Querying Beijing Traffic Management Bureau...
+🚗 Beijing Restriction Reminder | March 14 Friday
+🔢 Restricted plates: 4 and 9
+⏰ Time: 7:00-20:00
+🗺️ Area: Within 5th Ring Road (excluding 5th Ring Road)
+⚠️ Non-local vehicles: Need Beijing entry permit
 ```
 
-### 公交查询
+### Express Delivery
 ```
-用户：从北京西站到中关村怎么走？
-助手：查询高德地图...
-🚌 推荐方案（约 50 分钟，5 元）
-1. 北京西站 乘坐 地铁 9 号线（国家图书馆方向）
-2. 国家图书馆站 换乘 地铁 4 号线（安河桥北方向）
-3. 中关村站 下车，步行 300 米
-⏰ 首班车：5:30 | 末班车：23:00
+User: Help me check delivery SF1234567890
+Assistant: Querying Kuaidi 100...
+📦 SF SF1234567890
+📍 Current: Beijing Chaoyang XX Branch
+🚚 Out for delivery, expected before 18:00 today
+👤 Courier: Zhang San 138****1234
+```
+
+### Bus Query
+```
+User: How to get from Beijing West Station to Zhongguancun?
+Assistant: Querying Gaode Maps...
+🚌 Recommended route (about 50 minutes, 5 yuan)
+1. Beijing West Station take Subway Line 9 (National Library direction)
+2. National Library Station transfer to Subway Line 4 (Anheqiao North direction)
+3. Zhongguancun Station exit, walk 300 meters
+⏰ First train: 5:30 | Last train: 23:00
 ```
 
 ---
 
-## 注意事项
+## Notes
 
-- 天气数据每 30 分钟更新一次
-- 限行政策可能临时调整，以官方公告为准
-- 油价调整日为每 10 个工作日
-- 快递信息实时查询，可能存在延迟
-- 公交查询建议出行前再次确认
+- Weather data updates every 30 minutes
+- Traffic restriction policies may change temporarily, refer to official announcements
+- Fuel price adjustment day is every 10 working days
+- Express delivery information is queried in real-time, may have delays
+- Bus queries are recommended to be confirmed again before travel
+
+---
+
+*Made with 👻 by Ghost & Jake*

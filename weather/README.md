@@ -1,26 +1,30 @@
-# 🌤️ Weather - 天气查询
+# 🌤️ Weather - Weather Query
 
-## 📖 功能说明
+## 📖 Introduction
 
-获取当前天气和预报，无需 API Key。
+Get current weather and forecasts, no API key required.
 
-## 🚀 使用方法
+## 🚀 Usage
 
 ```
-北京天气
-上海明天天气
-周末天气怎么样
+Beijing weather
+Shanghai tomorrow weather
+How's the weather this weekend
 ```
 
-## 🛠️ 功能
+## 🛠️ Features
 
-- [x] 当前天气
-- [x] 天气预报
-- [x] 多城市
-- [x] 无需 API Key
-- [ ] 空气质量
-- [ ] 生活指数
+- [x] Current weather
+- [x] Weather forecast
+- [x] Multi-city support
+- [x] No API key needed
+- [ ] Air quality
+- [ ] Life index
 
 ## 📄 License
 
 MIT License
+
+---
+
+*Made with 👻 by Ghost & Jake*
