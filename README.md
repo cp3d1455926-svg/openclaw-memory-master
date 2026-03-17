@@ -3,8 +3,6 @@
 > 🎨 **40 个原创技能** | 📚 **43 个完整文档** | 🚀 **开箱即用**
   由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
-Created and maintained by 小鬼 👻 (Jake's AI Assistant)
-
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Skills Count](https://img.shields.io/badge/skills-43-green.svg)](./)
 [![Stars](https://img.shields.io/github/stars/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/stargazers)
@@ -12,9 +10,7 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 ---
 
-## 🌟 简介 / Introduction
-
-**中文**
+## 🌟 简介 
 
 👻 Ghost Skills 是一个包含 43 个 OpenClaw 技能的合集，其中 40 个为原创作品。
 
@@ -22,24 +18,24 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 ---
 
-## 📦 技能分类 / Skill Categories
+## 📦 技能分类 
 
-| 类别 Category | 技能数 Skills | 描述 Description |
+| 类别  | 技能数  | 描述  |
 |--------------|--------------|------------------|
-| 🎨 内容创作 Content Creation | 5 | 公众号/小红书/AI 降味/图像生成 |
-| 📰 新闻资讯 News & Digest | 4 | 早晚推送/RSS 聚合/多源研究 |
-| 🛠️ 生活工具 Life Tools | 4 | 天气/限行/快递/记忆记录 |
-| 🎮 娱乐生活 Entertainment | 2 | 电影推荐/音乐助手 |
-| 📚 学习工具 Learning Tools | 2 | 单词记忆/PDF 阅读 |
-| 🛒 电商工具 E-commerce | 1 | 价格监控/比价 |
-| 💻 开发效率 Development | 6 | 编码助手/浏览器自动化/技能创建 |
-| 🧠 知识管理 Knowledge | 3 | Obsidian 同步/本体管理/备忘录 |
-| 🛡️ 安全进化 Safety & AI | 4 | 技能审查/自进化学习/主动代理 |
-| ✈️ 旅行规划 Travel Planning | 1 | 行程规划/景点推荐/预算估算 ✨ NEW |
-| 📋 工作效率 Productivity | 3 | 会议助手/邮件助手/PPT 生成 ✨ NEW |
-| 🎯 个人成长 Personal Growth | 3 | 书籍推荐/习惯打卡/目标管理 ✨ NEW |
+| 🎨 内容创作 | 5 | 公众号/小红书/AI 降味/图像生成 |
+| 📰 新闻资讯 | 4 | 早晚推送/RSS 聚合/多源研究 |
+| 🛠️ 生活工具 | 4 | 天气/限行/快递/记忆记录 |
+| 🎮 娱乐生活 | 2 | 电影推荐/音乐助手 |
+| 📚 学习工具 | 2 | 单词记忆/PDF 阅读 |
+| 🛒 电商工具 | 1 | 价格监控/比价 |
+| 💻 开发效率 | 6 | 编码助手/浏览器自动化/技能创建 |
+| 🧠 知识管理 | 3 | Obsidian 同步/本体管理/备忘录 |
+| 🛡️ 安全进化 | 4 | 技能审查/自进化学习/主动代理 |
+| ✈️ 旅行规划 | 1 | 行程规划/景点推荐/预算估算 ✨ NEW |
+| 📋 工作效率 | 3 | 会议助手/邮件助手/PPT 生成 ✨ NEW |
+| 🎯 个人成长 | 3 | 书籍推荐/习惯打卡/目标管理 ✨ NEW |
 
-**✨ 特色技能 / Featured Skills:**
+**✨ 特色技能 **
 
 - 🎬 **Movie Recommender** - 根据心情推荐电影，豆瓣 API 对接
 - 🎵 **Music Helper** - 场景推荐，网易云歌词获取
@@ -331,7 +327,8 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 - **作者**: Jake's AI Assistant
 - **版本**: 1.1.0
 - **创建日期**: 2026-03-16
-- **GitHub**: https://github.com/cp3d1455926-svg/ghost-skills
+- **GitHub**: https://github.com/cp3d1455926-svg/OpenClaw-good-skills?tab=readme-ov-file
+- **Gitee**: https://gitee.com/Jake26602/OpenClaw-good-skill
 
 ---
 
