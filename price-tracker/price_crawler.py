@@ -412,6 +412,12 @@ def compare_prices(product_name):
     # 按最终价格排序
     results.sort(key=lambda x: x["final_price"])
     
+    # 计算节省金额（最高价 - 最低价）
+    if len(results) >= 2:
+        savings = results[-1]["final_price"] - results[0]["final_price"]
+        for result in results:
+            result["savings"] = savings
+    
     return results
 
 

@@ -348,15 +348,35 @@ def format_song_info(song):
     """格式化歌曲信息"""
     info = f"🎵 《{song.get('name', '未知')}》"
     
-    if song.get('artists'):
-        info += f" - {song['artists']}"
+    # 处理艺术家信息（可能是列表或字符串）
+    artists = song.get('artists', '')
+    if isinstance(artists, list):
+        # 如果是列表，提取 name 字段
+        artist_names = []
+        for artist in artists:
+            if isinstance(artist, dict):
+                artist_names.append(artist.get('name', ''))
+            else:
+                artist_names.append(str(artist))
+        artists = ', '.join(artist_names)
+    
+    if artists:
+        info += f" - {artists}"
     
     if song.get('album'):
-        info += f"\n📀 专辑：{song['album']}"
+        album = song['album']
+        if isinstance(album, dict):
+            album = album.get('name', '')
+        if album:
+            info += f"\n📀 专辑：{album}"
     
     if song.get('duration'):
-        minutes = song['duration'] // 60
-        seconds = song['duration'] % 60
+        duration = song['duration']
+        # 处理毫秒和秒两种格式
+        if duration > 1000:  # 可能是毫秒
+            duration = duration // 1000
+        minutes = duration // 60
+        seconds = duration % 60
         info += f"\n⏱️ 时长：{minutes}:{seconds:02d}"
     
     if song.get('rating'):

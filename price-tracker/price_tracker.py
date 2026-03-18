@@ -260,9 +260,12 @@ def main(query):
 
 """
         
-        savings = results[0]['final_price'] - results[-1]['final_price']
+        savings = results[-1]['final_price'] - results[0]['final_price']
         response += f"🏆 **推荐**：{format_platform(results[0]['platform'])} 最便宜！\n"
-        response += f"💰 比最贵平台省 ¥{savings:,}"
+        if savings > 0:
+            response += f"💰 比最贵平台省 ¥{savings:,}"
+        else:
+            response += f"💰 各平台价格相近"
         
         return response
     
