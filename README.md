@@ -78,7 +78,7 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 ```bash
 # 克隆仓库 / Clone repository
-git clone https://github.com/cp3d1455926-svg/ghost-skills.git
+git clone https://github.com/cp3d1455926-svg/OpenClaw-good-skills.git
 
 # 创建 symlink 到 OpenClaw workspace
 # Windows (管理员 PowerShell)
@@ -95,7 +95,7 @@ clawhub install 技能名称
 
 ```bash
 # 复制单个技能到 workspace/skills
-cp -r ghost-skills/official-account-assistant ~/.openclaw/workspace/skills/
+cp -r OpenClaw-good-skills/official-account-assistant ~/.openclaw/workspace/skills/
 ```
 
 ---

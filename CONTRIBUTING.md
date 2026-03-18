@@ -1,6 +1,6 @@
 # 贡献指南
 
-欢迎为 Ghost Skills 贡献代码！👻
+欢迎为 OpenClaw-good-skills 贡献代码！👻
 
 ## 🚀 快速开始
 
