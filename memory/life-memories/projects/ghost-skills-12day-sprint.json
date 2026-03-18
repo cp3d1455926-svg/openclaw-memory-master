@@ -15,7 +15,7 @@
         {"day": "Day 3", "date": "3/18", "task": "小红书助手优化（文案模板库）", "priority": "🔴高", "status": "完成 ✅"},
         {"day": "Day 4", "date": "3/18", "task": "电影推荐 - 豆瓣 API 对接", "priority": "🟡中", "status": "完成 ✅"},
         {"day": "Day 5", "date": "3/18", "task": "音乐助手 - 网易云 API 对接", "priority": "🟡中", "status": "完成 ✅"},
-        {"day": "Day 6", "date": "3/22", "task": "价格监控 - 电商爬虫", "priority": "🟡中", "status": "待开始"},
+        {"day": "Day 6", "date": "3/18", "task": "价格监控 - 电商爬虫优化", "priority": "🟡中", "status": "完成 ✅"},
         {"day": "Day 7", "date": "3/23", "task": "周回顾 + Bug 修复", "priority": "🟢低", "status": "待开始"}
       ]
     },

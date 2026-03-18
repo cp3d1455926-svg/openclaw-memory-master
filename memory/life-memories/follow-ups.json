@@ -41,9 +41,9 @@
       "task": "价格监控 - 电商爬虫优化",
       "due_date": "2026-03-22",
       "priority": "🟡中",
-      "status": "待开始",
+      "status": "✅ 完成",
       "related_to": "Ghost Skills 12 天冲刺",
-      "notes": "Day 6 任务"
+      "notes": "Day 6 任务 - 完善 price_crawler.py，添加缓存 + 重试 + 备用数据 + 历史价格"
     },
     {
       "id": "FU-006",
