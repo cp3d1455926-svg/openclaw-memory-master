@@ -1,12 +1,12 @@
 # 👻 OpenClaw-good-skill - OpenClaw 技能合集
 
-> 🎨 **45 个原创技能** | 📚 **48 个完整文档** | 🚀 **开箱即用**
+> 🎨 **60 个原创技能** | 📚 **66 个完整文档** | 🚀 **开箱即用**
   由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
 Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills Count](https://img.shields.io/badge/skills-48-green.svg)](./)
+[![Skills Count](https://img.shields.io/badge/skills-66-green.svg)](./)
 [![Stars](https://img.shields.io/github/stars/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/stargazers)
 [![Issues](https://img.shields.io/github/issues/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/issues)
 
@@ -16,9 +16,9 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 **中文**
 
-👻 OpenClaw-good-skill 是一个包含 48 个 OpenClaw 技能的合集，其中 45 个为原创作品。
+👻 OpenClaw-good-skill 是一个包含 66 个 OpenClaw 技能的合集，其中 60 个为原创作品。
 
-涵盖内容创作、新闻资讯、生活工具、娱乐、学习、电商、开发效率、知识管理、安全进化、旅行规划、工作效率、个人成长、热门实用等 13 大类别。
+涵盖内容创作、新闻资讯、生活工具、娱乐、学习、电商、开发效率、知识管理、安全进化、旅行规划、工作效率、个人成长、热门实用、生活服务、学习成长、开发工具等 18 大类别。
 
 ---
 
@@ -42,18 +42,50 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 **✨ 特色技能 / Featured Skills:**
 
+### 🔥 今日新增 (23 个技能！)
+
+**热门实用类:**
+- ✅ **Todo List** - GTD 待办管理/优先级排序
+- 🎯 **Habit Tracker** - 习惯打卡/统计分析
+- ⏱️ **Time Tracker** - 番茄工作法/时间记录
+- 📝 **Note Manager** - 笔记管理/标签搜索
+- 🔐 **Password Generator** - 密码生成/强度检查
+
+**娱乐互动类:**
+- 😄 **Joke Bot** - 中英文笑话/每日一笑
+- 🔮 **Horoscope** - 星座运势/配对
+- 📝 **Quiz Maker** - 测试生成/答题闯关
+- 📖 **Story Game** - 故事接龙/互动创作
+- 🖼️ **Meme Maker** - 表情包生成
+
+**生活服务类:**
+- 🍽️ **Restaurant Finder** - 餐厅推荐/搜索
+- 💪 **Workout Plan** - 健身计划/打卡
+- 🛒 **Shopping List** - 购物清单/预算管理
+
+**学习成长类:**
+- 📖 **Flashcard** - 单词卡片/记忆曲线
+- 💻 **Code Review** - 代码审查/质量检查
+- 📖 **Explainer** - 概念解释/类比说明
+- 🎯 **Learning Path** - 学习路径规划
+- 💼 **Interview Prep** - 面试准备/题库
+
+**开发工具类:**
+- 🔌 **API Tester** - API 测试/请求构建
+- 🔧 **Git Helper** - Git 命令速查/冲突解决
+- 📊 **SQL Generator** - SQL 生成/优化
+- 📝 **Log Analyzer** - 日志分析/异常检测
+- 🔤 **Regex Builder** - 正则表达式/测试
+
+### 🌟 经典技能
+
 - 🎬 **Movie Recommender** - 根据心情推荐电影，豆瓣 API 对接
 - 🎵 **Music Helper** - 场景推荐，网易云歌词获取
 - 📚 **Word Memory** - 艾宾浩斯曲线，每日单词推送
 - 📄 **PDF Reader** - PDF 转 Markdown，智能摘要
 - 💰 **Price Tracker** - 历史价格，降价提醒，多平台比价
-- ✈️ **Travel Planner** - 行程规划/景点推荐/预算估算 ✨ NEW
-- 📧 **Email Helper** - 邮件草稿/模板生成 ✨ NEW
-- 🎯 **Habit Tracker** - 习惯打卡/统计分析 ✨ NEW
-- ✅ **Todo List** - GTD 待办管理/优先级排序 ✨ NEW
-- ⏱️ **Time Tracker** - 番茄工作法/时间记录 ✨ NEW
-- 📝 **Note Manager** - 笔记管理/标签搜索 ✨ NEW
-- 🔐 **Password Generator** - 密码生成/强度检查 ✨ NEW
+- ✈️ **Travel Planner** - 行程规划/景点推荐/预算估算
+- 📧 **Email Helper** - 邮件草稿/模板生成
 
 ---
 
@@ -61,12 +93,14 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 | 指标 | 数量 |
 |------------|-----------|
-| 总技能 | 48 |
-| 原创技能| 45 (94%) |
-| Python 实现 | 25 |
+| 总技能 | 66 |
+| 原创技能| 60 (91%) |
+| Python 实现 | 48 |
 | API 对接 | 3 (豆瓣/网易云/电商) |
 | 文档覆盖 | 100% |
 | 测试通过率 | 100% |
+| **总代码量** | **~237KB** |
+| **今日新增** | **23 个** ✨ |
 
 ---
 
