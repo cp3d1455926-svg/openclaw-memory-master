@@ -1,12 +1,12 @@
 # 👻 OpenClaw-good-skill - OpenClaw 技能合集
 
-> 🎨 **40 个原创技能** | 📚 **43 个完整文档** | 🚀 **开箱即用**
+> 🎨 **45 个原创技能** | 📚 **48 个完整文档** | 🚀 **开箱即用**
   由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
 Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills Count](https://img.shields.io/badge/skills-43-green.svg)](./)
+[![Skills Count](https://img.shields.io/badge/skills-48-green.svg)](./)
 [![Stars](https://img.shields.io/github/stars/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/stargazers)
 [![Issues](https://img.shields.io/github/issues/cp3d1455926-svg/ghost-skills.svg)](https://github.com/cp3d1455926-svg/ghost-skills/issues)
 
@@ -16,9 +16,9 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 **中文**
 
-👻 OpenClaw-good-skill 是一个包含 43 个 OpenClaw 技能的合集，其中 40 个为原创作品。
+👻 OpenClaw-good-skill 是一个包含 48 个 OpenClaw 技能的合集，其中 45 个为原创作品。
 
-涵盖内容创作、新闻资讯、生活工具、娱乐、学习、电商、开发效率、知识管理、安全进化、旅行规划、工作效率、个人成长等 12 大类别。
+涵盖内容创作、新闻资讯、生活工具、娱乐、学习、电商、开发效率、知识管理、安全进化、旅行规划、工作效率、个人成长、热门实用等 13 大类别。
 
 ---
 
@@ -38,6 +38,7 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 | ✈️ 旅行规划 Travel Planning | 1 | 行程规划/景点推荐/预算估算 ✨ NEW |
 | 📋 工作效率 Productivity | 3 | 会议助手/邮件助手/PPT 生成 ✨ NEW |
 | 🎯 个人成长 Personal Growth | 3 | 书籍推荐/习惯打卡/目标管理 ✨ NEW |
+| 🔥 热门实用 Hot Utilities | 5 | 待办/习惯/时间/笔记/密码 ✨ NEW |
 
 **✨ 特色技能 / Featured Skills:**
 
@@ -49,6 +50,10 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 - ✈️ **Travel Planner** - 行程规划/景点推荐/预算估算 ✨ NEW
 - 📧 **Email Helper** - 邮件草稿/模板生成 ✨ NEW
 - 🎯 **Habit Tracker** - 习惯打卡/统计分析 ✨ NEW
+- ✅ **Todo List** - GTD 待办管理/优先级排序 ✨ NEW
+- ⏱️ **Time Tracker** - 番茄工作法/时间记录 ✨ NEW
+- 📝 **Note Manager** - 笔记管理/标签搜索 ✨ NEW
+- 🔐 **Password Generator** - 密码生成/强度检查 ✨ NEW
 
 ---
 
@@ -56,9 +61,9 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 | 指标 | 数量 |
 |------------|-----------|
-| 总技能 | 43 |
-| 原创技能| 40 (93%) |
-| Python 实现 | 20 |
+| 总技能 | 48 |
+| 原创技能| 45 (94%) |
+| Python 实现 | 25 |
 | API 对接 | 3 (豆瓣/网易云/电商) |
 | 文档覆盖 | 100% |
 | 测试通过率 | 100% |
