@@ -1,6 +1,6 @@
 # 👻 OpenClaw-good-skill - OpenClaw 技能合集
 
-> 🎨 **65 个原创技能** | 📚 **71 个完整文档** | 🚀 **开箱即用**
+> 🎨 **71 个原创技能** | 📚 **77 个完整文档** | 🚀 **开箱即用**
   由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
 Created and maintained by 小鬼 👻 (Jake's AI Assistant)
@@ -29,20 +29,53 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 | 🎨 内容创作 Content Creation | 5 | 公众号/小红书/AI 降味/图像生成 |
 | 📰 新闻资讯 News & Digest | 4 | 早晚推送/RSS 聚合/多源研究 |
 | 🛠️ 生活工具 Life Tools | 4 | 天气/限行/快递/记忆记录 |
-| 🎮 娱乐生活 Entertainment | 2 | 电影推荐/音乐助手 |
+| 🎮 娱乐生活 Entertainment | 5 | 电影/决策/倒计时/音乐助手 ✨ NEW |
 | 📚 学习成长 Learning & Growth | 7 | 单词/代码/书籍/测验/学习路径规划 ✨ NEW |
 | 🛒 电商工具 E-commerce | 1 | 价格监控/比价 |
 | 💻 开发效率 Development | 6 | 编码助手/浏览器自动化/技能创建 |
 | 🧠 知识管理 Knowledge | 3 | Obsidian 同步/本体管理/备忘录 |
 | 🛡️ 安全进化 Safety & AI | 4 | 技能审查/自进化学习/主动代理 |
 | ✈️ 旅行规划 Travel Planning | 1 | 行程规划/景点推荐/预算估算 ✨ NEW |
-| 📋 工作效率 Productivity | 3 | 会议助手/邮件助手/PPT 生成 ✨ NEW |
+| 📋 工作效率 Productivity | 4 | 会议纪要/邮件/简历/PPT 生成 ✨ NEW |
+| 💼 办公辅助 Office Assistant | 3 | 邮件/简历/发票生成 ✨ NEW |
 | 🎯 个人成长 Personal Growth | 3 | 书籍推荐/习惯打卡/目标管理 ✨ NEW |
 | 🔥 热门实用 Hot Utilities | 5 | 待办/习惯/时间/笔记/密码 ✨ NEW |
 
 **✨ 特色技能 / Featured Skills:**
 
-### 🔥 最新新增 (2026-03-21) - 学习类 Skills 特辑！
+### 🔥 最新新增 (2026-03-21) - 全天技能大爆发！
+
+**📊 今日新增：16 个技能！**
+
+**🌤️ 天气工具类 (1 个):**
+- 🌤️ **Weather Pro** - 专业天气预报/预警提醒/7 天预报
+
+**📱 实用工具类 (2 个):**
+- 📱 **QR Code Generator** - 二维码生成/识别/自定义样式
+- 📄 **File Converter** - 文件格式转换/批量处理/50+ 格式
+
+**💼 办公辅助类 (3 个):**
+- 📧 **Email Writer** - 邮件写作助手/50+ 模板/中英文
+- 📄 **Resume Builder** - 简历生成器/ATS 优化/20+ 模板
+- 🧾 **Invoice Generator** - 发票/收据生成/自动计税
+
+**🎮 娱乐生活类 (3 个):**
+- 🎬 **Movie Picker** - 电影推荐/豆瓣对接/多人投票
+- 🎲 **Decision Maker** - 选择困难症助手/利弊分析
+- ⏰ **Countdown Timer** - 倒计时工具/重要日期/目标追踪
+
+**📊 数据分析类 (1 个):**
+- 📊 **Data Visualizer** - 数据可视化/30+ 图表/交互式
+
+**📚 学习成长类 (5 个):**
+- 📖 **Vocab Builder** - 每日单词学习/多语言支持
+- 💻 **Code Snippet** - 代码片段管理/分类搜索
+- 📚 **Book Summary** - 书籍摘要生成/知识点提取
+- 📝 **Quiz Maker** - 测验生成器/自动评分
+- 🗺️ **Learning Path** - 学习路径规划/进度追踪
+
+**📝 会议效率类 (1 个):**
+- 📝 **Meeting Minutes** - 会议纪要生成/语音转文字
 
 **📚 学习成长类 (5 个全新技能):**
 - 📖 **Vocab Builder** - 每日单词学习/多语言支持/记忆曲线
@@ -114,15 +147,15 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 | 指标 | 数量 |
 |------------|-----------|
-| 总技能 | 71 |
-| 原创技能| 65 (92%) |
-| Python 实现 | 53 |
-| JavaScript 实现 | 18 |
-| API 对接 | 5 (豆瓣/网易云/电商/天气/词典) |
+| 总技能 | 77 |
+| 原创技能| 71 (92%) |
+| Python 实现 | 54 |
+| JavaScript 实现 | 23 |
+| API 对接 | 6 (豆瓣/网易云/电商/天气/词典/天气 Pro) |
 | 文档覆盖 | 100% |
 | 测试通过率 | 100% |
-| **总代码量** | **~265KB** |
-| **本次新增** | **5 个学习类** ✨ |
+| **总代码量** | **~280KB** |
+| **今日新增** | **16 个** 🎉 |
 
 ---
 
@@ -348,6 +381,44 @@ git push origin feature/your-skill
 
 ## 📝 更新日志
 
+### v1.6.0 (2026-03-21) - 技能大爆发！16 个新技能！
+
+**📊 新增技能 (16 个):**
+
+**天气工具类:**
+- `weather-pro` - 专业天气预报
+
+**实用工具类:**
+- `qr-code-generator` - 二维码生成器
+- `file-converter` - 文件格式转换器
+- `data-visualizer` - 数据可视化工具
+
+**办公辅助类:**
+- `email-writer` - 邮件写作助手
+- `resume-builder` - 简历生成器
+- `invoice-generator` - 发票生成器
+
+**娱乐生活类:**
+- `movie-picker` - 电影选择器
+- `decision-maker` - 选择困难症助手
+- `countdown-timer` - 倒计时工具
+
+**会议效率类:**
+- `meeting-minutes` - 会议纪要生成器
+
+**学习成长类:**
+- `vocab-builder` - 每日单词学习
+- `code-snippet` - 代码片段管理
+- `book-summary` - 书籍摘要生成
+- `quiz-maker` - 测验生成器
+- `learning-path` - 学习路径规划
+
+**统计:**
+- 📊 技能总数：77 个
+- 📚 文档覆盖：100%
+- 🐍 Python 实现：54 个
+- 💻 JavaScript 实现：23 个
+
 ### v1.5.0 (2026-03-21) - 学习类 Skills 特辑！
 - ✨ 新增 5 个学习类技能：
   - `vocab-builder` - 每日单词学习（英语/日语/韩语）
@@ -420,9 +491,10 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 由 **小鬼** 👻 创建和维护
 
 - **作者**: Jake's AI Assistant
-- **版本**: 1.5.0
+- **版本**: 1.6.0
 - **创建日期**: 2026-03-16
 - **最新更新日期**: 2026-03-21
+- **今日新增**: 16 个技能 🎉
 - **GitHub**: https://github.com/cp3d1455926-svg/OpenClaw-good-skills
 
 ---
