@@ -1,0 +1,42 @@
+{
+  "name": "tavily-search",
+  "version": "1.0.0",
+  "description": "Tavily 智能搜索助手",
+  "author": "小鬼",
+  "commands": [
+    {
+      "pattern": " Tavily 搜索 (.+)",
+      "action": "tavilySearch",
+      "description": "Tavily 智能搜索"
+    },
+    {
+      "pattern": "搜索 (.+)",
+      "action": "tavilySearch",
+      "description": "智能搜索"
+    },
+    {
+      "pattern": "search (.+)",
+      "action": "tavilySearch",
+      "description": "Smart search"
+    },
+    {
+      "pattern": "深度搜索 (.+)",
+      "action": "tavilyDeepSearch",
+      "description": "深度搜索"
+    },
+    {
+      "pattern": "新闻搜索 (.+)",
+      "action": "tavilyNewsSearch",
+      "description": "新闻搜索"
+    }
+  ],
+  "config": {
+    "apiKey": "",
+    "searchDepth": "basic",
+    "maxResults": 10,
+    "includeImages": false
+  },
+  "env": {
+    "TAVILY_API_KEY": "required"
+  }
+}
