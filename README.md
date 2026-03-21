@@ -1,6 +1,6 @@
 # 👻 OpenClaw-good-skill - OpenClaw 技能合集
 
-> 🎨 **60 个原创技能** | 📚 **66 个完整文档** | 🚀 **开箱即用**
+> 🎨 **65 个原创技能** | 📚 **71 个完整文档** | 🚀 **开箱即用**
   由 小鬼 👻 (Jake's AI Assistant) 创建和维护的 OpenClaw 技能仓库
 
 Created and maintained by 小鬼 👻 (Jake's AI Assistant)
@@ -30,7 +30,7 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 | 📰 新闻资讯 News & Digest | 4 | 早晚推送/RSS 聚合/多源研究 |
 | 🛠️ 生活工具 Life Tools | 4 | 天气/限行/快递/记忆记录 |
 | 🎮 娱乐生活 Entertainment | 2 | 电影推荐/音乐助手 |
-| 📚 学习工具 Learning Tools | 2 | 单词记忆/PDF 阅读 |
+| 📚 学习成长 Learning & Growth | 7 | 单词/代码/书籍/测验/学习路径规划 ✨ NEW |
 | 🛒 电商工具 E-commerce | 1 | 价格监控/比价 |
 | 💻 开发效率 Development | 6 | 编码助手/浏览器自动化/技能创建 |
 | 🧠 知识管理 Knowledge | 3 | Obsidian 同步/本体管理/备忘录 |
@@ -42,7 +42,14 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 **✨ 特色技能 / Featured Skills:**
 
-### 🔥 今日新增 (23 个技能！)
+### 🔥 最新新增 (2026-03-21) - 学习类 Skills 特辑！
+
+**📚 学习成长类 (5 个全新技能):**
+- 📖 **Vocab Builder** - 每日单词学习/多语言支持/记忆曲线
+- 💻 **Code Snippet** - 代码片段管理/分类搜索/一键复制
+- 📚 **Book Summary** - 书籍摘要生成/知识点提取/思维导图
+- 📝 **Quiz Maker** - 测验生成器/自动评分/错题本
+- 🗺️ **Learning Path** - 学习路径规划/进度追踪/资源推荐
 
 **热门实用类:**
 - ✅ **Todo List** - GTD 待办管理/优先级排序
@@ -63,19 +70,33 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 - 💪 **Workout Plan** - 健身计划/打卡
 - 🛒 **Shopping List** - 购物清单/预算管理
 
-**学习成长类:**
-- 📖 **Flashcard** - 单词卡片/记忆曲线
-- 💻 **Code Review** - 代码审查/质量检查
-- 📖 **Explainer** - 概念解释/类比说明
-- 🎯 **Learning Path** - 学习路径规划
-- 💼 **Interview Prep** - 面试准备/题库
-
 **开发工具类:**
 - 🔌 **API Tester** - API 测试/请求构建
 - 🔧 **Git Helper** - Git 命令速查/冲突解决
 - 📊 **SQL Generator** - SQL 生成/优化
 - 📝 **Log Analyzer** - 日志分析/异常检测
 - 🔤 **Regex Builder** - 正则表达式/测试
+
+**热门实用类:**
+- ✅ **Todo List** - GTD 待办管理/优先级排序
+- 🎯 **Habit Tracker** - 习惯打卡/统计分析
+- ⏱️ **Time Tracker** - 番茄工作法/时间记录
+- 📝 **Note Manager** - 笔记管理/标签搜索
+- 🔐 **Password Generator** - 密码生成/强度检查
+
+**娱乐互动类:**
+- 😄 **Joke Bot** - 中英文笑话/每日一笑
+- 🔮 **Horoscope** - 星座运势/配对
+- 📝 **Quiz Maker** - 测试生成/答题闯关
+- 📖 **Story Game** - 故事接龙/互动创作
+- 🖼️ **Meme Maker** - 表情包生成
+
+**生活服务类:**
+- 🍽️ **Restaurant Finder** - 餐厅推荐/搜索
+- 💪 **Workout Plan** - 健身计划/打卡
+- 🛒 **Shopping List** - 购物清单/预算管理
+
+
 
 ### 🌟 经典技能
 
@@ -93,14 +114,15 @@ Created and maintained by 小鬼 👻 (Jake's AI Assistant)
 
 | 指标 | 数量 |
 |------------|-----------|
-| 总技能 | 66 |
-| 原创技能| 60 (91%) |
-| Python 实现 | 48 |
-| API 对接 | 3 (豆瓣/网易云/电商) |
+| 总技能 | 71 |
+| 原创技能| 65 (92%) |
+| Python 实现 | 53 |
+| JavaScript 实现 | 18 |
+| API 对接 | 5 (豆瓣/网易云/电商/天气/词典) |
 | 文档覆盖 | 100% |
 | 测试通过率 | 100% |
-| **总代码量** | **~237KB** |
-| **今日新增** | **23 个** ✨ |
+| **总代码量** | **~265KB** |
+| **本次新增** | **5 个学习类** ✨ |
 
 ---
 
@@ -176,12 +198,17 @@ cp -r OpenClaw-good-skills/official-account-assistant ~/.openclaw/workspace/skil
 | [🎬 movie-recommender](movie-recommender/README.md) | 电影推荐助手（心情推荐/豆瓣评分/观影记录）✨ NEW | [📖](movie-recommender/README.md) |
 | [🎵 music-helper](music-helper/README.md) | 音乐助手（歌单推荐/歌词获取/音乐搜索）✨ NEW | [📖](music-helper/README.md) |
 
-### 📚 学习工具类
+### 📚 学习成长类
 
 | 技能 | 描述 | 文档 |
 |------|------|------|
-| [📚 word-memory](word-memory/README.md) | 单词记忆助手（艾宾浩斯曲线/每日推送/测试）✨ NEW | [📖](word-memory/README.md) |
-| [📄 pdf-reader](pdf-reader/README.md) | PDF 阅读助手（转 Markdown/摘要/问答）✨ NEW | [📖](pdf-reader/README.md) |
+| [📖 vocab-builder](skills/vocab-builder/SKILL.md) | 每日单词学习（多语言支持/记忆曲线/测验）✨ NEW | [📖](skills/vocab-builder/SKILL.md) |
+| [💻 code-snippet](skills/code-snippet/SKILL.md) | 代码片段管理（分类存储/快速搜索/一键复制）✨ NEW | [📖](skills/code-snippet/SKILL.md) |
+| [📚 book-summary](skills/book-summary/SKILL.md) | 书籍摘要生成（核心知识点/思维导图/推荐）✨ NEW | [📖](skills/book-summary/SKILL.md) |
+| [📝 quiz-maker](skills/quiz-maker/SKILL.md) | 测验生成器（多种题型/自动评分/错题本）✨ NEW | [📖](skills/quiz-maker/SKILL.md) |
+| [🗺️ learning-path](skills/learning-path/SKILL.md) | 学习路径规划（系统学习/进度追踪/资源推荐）✨ NEW | [📖](skills/learning-path/SKILL.md) |
+| [📚 word-memory](word-memory/README.md) | 单词记忆助手（艾宾浩斯曲线/每日推送/测试） | [📖](word-memory/README.md) |
+| [📄 pdf-reader](pdf-reader/README.md) | PDF 阅读助手（转 Markdown/摘要/问答） | [📖](pdf-reader/README.md) |
 
 ### 🛒 电商工具类
 
@@ -321,6 +348,31 @@ git push origin feature/your-skill
 
 ## 📝 更新日志
 
+### v1.5.0 (2026-03-21) - 学习类 Skills 特辑！
+- ✨ 新增 5 个学习类技能：
+  - `vocab-builder` - 每日单词学习（英语/日语/韩语）
+  - `code-snippet` - 代码片段管理（多语言支持）
+  - `book-summary` - 书籍摘要生成（核心知识点提取）
+  - `quiz-maker` - 测验生成器（选择/判断/填空）
+  - `learning-path` - 学习路径规划（从入门到精通）
+- 📚 创建学习类 skills 合集文档
+- 📊 技能总数：71 个
+- 🐍 Python 实现：53 个
+- 💻 JavaScript 实现：18 个
+- 📝 文档覆盖：100%
+
+### v1.4.0 (2026-03-20)
+- ✨ 新增 23 个热门实用技能：
+  - Todo List / Habit Tracker / Time Tracker
+  - Note Manager / Password Generator
+  - Joke Bot / Horoscope / Story Game
+  - Meme Maker / Restaurant Finder
+  - Workout Plan / Shopping List
+  - API Tester / Git Helper / SQL Generator
+  - Log Analyzer / Regex Builder
+- 📊 技能总数：66 个
+- 🎯 涵盖 18 大类别
+
 ### v1.3.0 (2026-03-16)
 - ✨ 完善 3 个高优先级技能：
   - `official-account-assistant` - 公众号助手（AI 降味/标题生成）
@@ -368,8 +420,9 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 由 **小鬼** 👻 创建和维护
 
 - **作者**: Jake's AI Assistant
-- **版本**: 1.1.0
+- **版本**: 1.5.0
 - **创建日期**: 2026-03-16
+- **最新更新日期**: 2026-03-21
 - **GitHub**: https://github.com/cp3d1455926-svg/OpenClaw-good-skills
 
 ---
