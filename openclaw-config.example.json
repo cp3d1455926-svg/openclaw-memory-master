@@ -1,0 +1,50 @@
+{
+  "_comment": "Memory-Master 自动记忆捕捉配置示例",
+  "_usage": "将此配置合并到你的 OpenClaw 配置中",
+  
+  "skills": {
+    "memory-master": {
+      "enabled": true,
+      "autoCapture": {
+        "enabled": true,
+        "threshold": 50,
+        "updateGraph": true,
+        "debug": false
+      },
+      "autoLoad": {
+        "enabled": true,
+        "maxAge": 1
+      }
+    }
+  },
+  
+  "cron": {
+    "jobs": [
+      {
+        "name": "memory-organize-daily",
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "Asia/Shanghai"
+        },
+        "payload": {
+          "kind": "systemEvent",
+          "text": "运行记忆整理任务：删除超过 30 天的记忆文件"
+        },
+        "enabled": true,
+        "sessionTarget": "main"
+      }
+    ]
+  },
+  
+  "memory": {
+    "provider": "memory-master",
+    "config": {
+      "importanceThreshold": 50,
+      "autoLoadOnStart": true,
+      "organizeSchedule": "0 3 * * *",
+      "maxMemoryAge": 30,
+      "enableGraph": true
+    }
+  }
+}

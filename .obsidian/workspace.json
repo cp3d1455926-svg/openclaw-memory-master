@@ -185,6 +185,10 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "test-debug-scenario1.js",
+    "test-real-scenario.js",
+    "INSTALL.md",
+    "openclaw-config.example.json",
     "CRON_EXAMPLE.md",
     "test-auto-capture.js",
     "auto-capture.js",
@@ -194,8 +198,6 @@
     "utils/importance-new.js",
     "test-debug.js",
     "test-regex2.js",
-    "test-regex.js",
-    "test.js",
     "SETUP.md",
     "SKILL.md",
     "README.md"

@@ -20,7 +20,7 @@ const CONFIG_FILE = path.join(__dirname, 'config.json');
 
 // 默认配置
 const DEFAULT_CONFIG = {
-  importanceThreshold: 50,
+  importanceThreshold: 40,  // 降低阈值到 40 分，更灵敏
   autoLoadOnStart: true,
   organizeSchedule: '0 3 * * *',
   maxMemoryAge: 30,
