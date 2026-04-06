@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DESIGN.md",
+                "file": "FINAL_TEST_REPORT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DESIGN"
+              "title": "FINAL_TEST_REPORT"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DESIGN.md",
+                "file": "FINAL_TEST_REPORT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "DESIGN 的反向链接列表"
+              "title": "FINAL_TEST_REPORT 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DESIGN.md",
+                "file": "FINAL_TEST_REPORT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "DESIGN 的出链列表"
+              "title": "FINAL_TEST_REPORT 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DESIGN.md",
+                "file": "FINAL_TEST_REPORT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DESIGN 的大纲"
+              "title": "FINAL_TEST_REPORT 的大纲"
             }
           }
         ]
@@ -185,10 +185,12 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "TEST_RECORD.md",
+    "GITHUB_MEMORY_FRAMEWORKS.md",
+    "DESIGN.md",
     "SERVER_IMPLEMENTATION.md",
     "OPENVIKING_DEEP_ANALYSIS.md",
     "COMPREHENSIVE_REFERENCE_REPORT.md",
-    "GITHUB_MEMORY_FRAMEWORKS.md",
     "test-compaction.js",
     "context-compaction.js",
     "test-consolidation.js",
