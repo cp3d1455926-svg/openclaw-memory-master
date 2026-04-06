@@ -1,0 +1,30 @@
+{
+  "name": "openclaw-memory-master",
+  "version": "0.1.0",
+  "description": "OpenClaw 超级记忆增强 Skill - 跨会话记忆连续性、智能过滤、记忆图谱、自动整理",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "memory",
+    "ai-assistant",
+    "clawhub"
+  ],
+  "author": "小鬼 👻 × Jake",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/Jake26602/openclaw-memory-master.git"
+  },
+  "bugs": {
+    "url": "https://gitee.com/Jake26602/openclaw-memory-master/issues"
+  },
+  "homepage": "https://gitee.com/Jake26602/openclaw-memory-master#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

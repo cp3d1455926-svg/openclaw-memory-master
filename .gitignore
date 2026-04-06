@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# OpenClaw runtime
+*.log
+.openclaw-state.json
+
+# Memory files (generated at runtime)
+memory-graph.json
+memory-state.json
+
+# Config (may contain secrets)
+config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build output
+dist/
+build/
