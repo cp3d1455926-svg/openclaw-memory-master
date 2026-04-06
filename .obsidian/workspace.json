@@ -185,13 +185,19 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "test-v2.js",
+    "utils/importance-v2.js",
+    "test-new.js",
+    "utils/importance-new.js",
+    "test-debug.js",
+    "test-regex2.js",
+    "test-regex.js",
+    "test.js",
     "SETUP.md",
     "package.json",
     "utils/importance.js",
     "utils",
-    "index.js",
     "SKILL.md",
-    "LICENSE",
     "README.md"
   ]
 }
