@@ -185,6 +185,10 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "test-memory-manager.js",
+    "memory-manager.js",
+    "OPTIMIZATION_PLAN.md",
+    "CLAUDE_INSPIRED_OPTIMIZATION.md",
     "OPTIMIZATION_COMPLETE.md",
     "test-entity-final.js",
     "utils/entity-extractor-final.js",
@@ -197,7 +201,6 @@
     "auto-capture-v2.js",
     "utils/entity-extractor.js",
     "FINAL_TEST_REPORT.md",
-    "test-live.js",
     "LIVE_TEST.md",
     "TEST_REPORT.md",
     "INSTALL.md",
