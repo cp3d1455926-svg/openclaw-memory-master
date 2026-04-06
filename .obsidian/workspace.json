@@ -185,6 +185,7 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "TEST_REPORT.md",
     "test-debug-scenario1.js",
     "test-real-scenario.js",
     "INSTALL.md",
@@ -197,7 +198,6 @@
     "test-new.js",
     "utils/importance-new.js",
     "test-debug.js",
-    "test-regex2.js",
     "SETUP.md",
     "SKILL.md",
     "README.md"
