@@ -185,6 +185,9 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "CRON_EXAMPLE.md",
+    "test-auto-capture.js",
+    "auto-capture.js",
     "test-v2.js",
     "utils/importance-v2.js",
     "test-new.js",
@@ -194,9 +197,6 @@
     "test-regex.js",
     "test.js",
     "SETUP.md",
-    "package.json",
-    "utils/importance.js",
-    "utils",
     "SKILL.md",
     "README.md"
   ]
