@@ -1,6 +1,6 @@
 {
-  "name": "openclaw-memory-master",
-  "version": "0.1.0",
+  "name": "memory-master",
+  "version": "3.1.0",
   "description": "OpenClaw 超级记忆增强 Skill - 跨会话记忆连续性、智能过滤、记忆图谱、自动整理",
   "main": "index.js",
   "scripts": {
