@@ -185,6 +185,7 @@
   },
   "active": "9c3a1761456a31ba",
   "lastOpenFiles": [
+    "GITHUB_MEMORY_FRAMEWORKS.md",
     "test-compaction.js",
     "context-compaction.js",
     "test-consolidation.js",
@@ -199,7 +200,6 @@
     "test-entity-v3.js",
     "utils/entity-extractor-v3.js",
     "OPTIMIZATION_REPORT.md",
-    "test-entity-v2.js",
     "FINAL_TEST_REPORT.md",
     "LIVE_TEST.md",
     "TEST_REPORT.md",
