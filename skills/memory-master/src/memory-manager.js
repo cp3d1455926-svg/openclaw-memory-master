@@ -1,6 +1,13 @@
 /**
- * Memory-Master v3.0.0 - 统一记忆管理器
- * 整合 4 类记忆模型、时间树结构、5 种检索类型
+ * Memory-Master v4.2.0 - 统一记忆管理器
+ * 整合 4 类记忆模型、时间树结构、5 种检索类型、迭代压缩
+ * 
+ * @version 4.2.0
+ * @date 2026-04-11
+ * @features:
+ *   - 迭代压缩 (Hermes Agent 启发)
+ *   - Lineage 谱系追踪
+ *   - 结构化摘要模板
  */
 
 const fs = require('fs');
@@ -9,6 +16,7 @@ const path = require('path');
 const { MemoryTypes, MemoryTypeClassifier } = require('./memory-classifier');
 const { TimeTree } = require('./time-tree');
 const { QueryTypes, QueryClassifier } = require('./query-classifier');
+const { AAAKIterativeCompressor } = require('./compressors/aaak-iterative-compressor');
 
 class MemoryManager {
   constructor(config = {}) {
@@ -22,6 +30,12 @@ class MemoryManager {
     this.typeClassifier = new MemoryTypeClassifier();
     this.timeTree = new TimeTree(path.join(this.config.baseDir, 'time-tree'));
     this.queryClassifier = new QueryClassifier();
+    
+    // 初始化迭代压缩器 (v4.2.0 新增)
+    this.compressor = new AAAKIterativeCompressor({
+      maxLength: config.compressionMaxLength || 2000,
+      targetCompressionRatio: config.compressionRatio || 0.6,
+    });
 
     // 确保目录结构
     this.ensureDirectoryStructure();
@@ -185,6 +199,119 @@ ${memory.content}
     });
 
     fs.writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf8');
+  }
+
+  /**
+   * 压缩记忆 (v4.2.0 新增)
+   * @param {string} memoryId - 记忆 ID
+   * @param {object} options - 选项
+   * @returns {object} 压缩结果
+   */
+  async compressMemory(memoryId, options = {}) {
+    const memory = this.cache.memories.get(memoryId);
+    if (!memory) {
+      throw new Error(`Memory ${memoryId} not found`);
+    }
+
+    // 检查是否需要压缩
+    if (memory.content.length < (options.minLength || 1000)) {
+      return {
+        success: false,
+        reason: 'Content too short',
+        memoryId
+      };
+    }
+
+    // 查找父记忆的摘要 (用于迭代压缩)
+    const parentSummary = options.parentMemoryId
+      ? await this.getMemorySummary(options.parentMemoryId)
+      : null;
+
+    // 执行压缩
+    const compressionResult = await this.compressor.compress(
+      memory.content,
+      parentSummary,
+      options.parentMemoryId
+    );
+
+    // 更新记忆对象
+    memory.summary = compressionResult.summary;
+    memory.compressionRatio = compressionResult.compressionRatio;
+    memory.isIterativeCompression = compressionResult.isIterative;
+    memory.compressionChain = compressionResult.lineageChain;
+    memory.lastCompressedSummary = parentSummary;
+    memory.compressionTemplate = compressionResult.metadata.template;
+
+    // 更新缓存
+    this.cache.memories.set(memoryId, memory);
+
+    // 更新文件
+    const filePath = this.getMemoryFilePath(memory, new Date(memory.timestamp));
+    this.writeMemoryToFile(filePath, memory);
+
+    return {
+      success: true,
+      memoryId,
+      summary: compressionResult.summary,
+      compressionRatio: compressionResult.compressionRatio,
+      isIterative: compressionResult.isIterative,
+      lineageChain: compressionResult.lineageChain,
+      metadata: compressionResult.metadata
+    };
+  }
+
+  /**
+   * 批量压缩 (v4.2.0 新增)
+   * @param {array} memoryIds - 记忆 ID 列表
+   * @param {object} options - 选项
+   * @returns {array} 压缩结果
+   */
+  async compressMemoriesBatch(memoryIds, options = {}) {
+    const results = [];
+
+    for (const memoryId of memoryIds) {
+      try {
+        const result = await this.compressMemory(memoryId, options);
+        results.push(result);
+        
+        // 延迟避免速率限制
+        if (options.delayMs) {
+          await new Promise(resolve => setTimeout(resolve, options.delayMs));
+        }
+      } catch (error) {
+        results.push({
+          success: false,
+          memoryId,
+          error: error.message
+        });
+      }
+    }
+
+    return {
+      total: memoryIds.length,
+      success: results.filter(r => r.success).length,
+      failed: results.filter(r => !r.success).length,
+      results
+    };
+  }
+
+  /**
+   * 获取记忆摘要 (v4.2.0 新增)
+   */
+  async getMemorySummary(memoryId) {
+    const memory = this.cache.memories.get(memoryId);
+    if (!memory) {
+      return null;
+    }
+    
+    // 如果已经有摘要，直接返回
+    if (memory.summary) {
+      return memory.summary;
+    }
+
+    // 否则实时压缩
+    const result = await this.compressMemory(memoryId);
+    return result.success ? result.summary : null;
   }
 
   /**
@@ -451,7 +578,8 @@ module.exports = {
   MemoryManager,
   MemoryTypes,
   QueryTypes,
-  TimeTree
+  TimeTree,
+  AAAKIterativeCompressor: require('./compressors/aaak-iterative-compressor').AAAKIterativeCompressor
 };
 
 // CLI 测试

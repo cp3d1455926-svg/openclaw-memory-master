@@ -1,12 +1,14 @@
 {
   "name": "memory-master",
-  "version": "3.0.0-dev",
-  "description": "Local memory system with 4 memory types, time tree structure, and 5 query types",
+  "version": "4.2.0",
+  "description": "Local memory system with layered storage (L0/L1/L2), AAAK compression, knowledge graph, and multi-path retrieval",
   "main": "src/memory-manager.js",
+  "type": "module",
   "scripts": {
     "init": "node scripts/init.js",
     "detect": "node scripts/detect.js",
     "test": "node src/memory-manager.js",
+    "test:layered": "node test/layered-test.js",
     "test:classifier": "node src/memory-classifier.js",
     "test:time-tree": "node src/time-tree.js",
     "test:query": "node src/query-classifier.js",
@@ -19,9 +21,11 @@
     "context",
     "openclaw",
     "skill",
-    "ai-agent"
+    "ai-agent",
+    "layered-storage",
+    "knowledge-graph"
   ],
-  "author": "李哲龙 × Jake",
+  "author": "李哲 × Jake",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {},
@@ -30,10 +34,12 @@
     "SKILL-zh.md",
     "README.md",
     "ROADMAP.md",
+    "DESIGN_v4.2.md",
     "src/",
     "scripts/",
     "templates/",
     "config/",
+    "test/",
     "package.json",
     "_meta.json"
   ],
@@ -43,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/Jake26602/openclaw-memory-master"
+    "url": "https://github.com/cp3d1455926-svg/memory-master.git"
   },
   "bugs": {
-    "url": "https://gitee.com/Jake26602/openclaw-memory-master/issues"
+    "url": "https://github.com/cp3d1455926-svg/memory-master/issues"
   },
-  "homepage": "https://openclaw-memory-master.netlify.app"
+  "homepage": "https://cp3d1455926-svg.github.io/openclaw-memory/"
 }

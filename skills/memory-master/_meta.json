@@ -1,6 +1,8 @@
 {
   "ownerId": "kn76rdncvxppt5yqyggwkg9ae58273ex",
   "slug": "memory-master",
-  "version": "2.6.5",
-  "publishedAt": 1772739709394
+  "version": "3.0.0-dev",
+  "publishedAt": 1772739709394,
+  "updatedAt": 1744199400000,
+  "description": "Local memory system with 4 memory types, time tree structure, and 5 query types - v3.0.0 core features implemented"
 }

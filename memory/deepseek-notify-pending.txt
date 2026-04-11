@@ -1,0 +1,6 @@
+﻿{
+    "url":  "https://github.com/deepseek-ai",
+    "message":  "馃毃 DeepSeek GitHub 鏈夋洿鏂帮紒\n\n妫€鏌ユ椂闂达細2026-04-10 22:58:14\n\n鍙兘鍙戝竷浜嗘柊妯″瀷鎴栨柊椤圭洰銆俙n\n绔嬪嵆鏌ョ湅锛歨ttps://github.com/deepseek-ai\n\n椤甸潰鍝堝笇鍙樺寲锛?lastHash -\u003e 1D5E42D6D496AB30E9337EF2A3CBB8E3",
+    "timestamp":  "2026-04-10T22:58:14Z",
+    "type":  "alert"
+}

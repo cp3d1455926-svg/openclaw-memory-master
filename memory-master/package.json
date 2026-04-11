@@ -58,5 +58,11 @@
   "bugs": {
     "url": "https://github.com/your-username/memory-master/issues"
   },
-  "homepage": "https://github.com/your-username/memory-master#readme"
+  "homepage": "https://github.com/your-username/memory-master#readme",
+  "clawhub": {
+    "repository": {
+      "github": "https://github.com/cp3d1455926-svg/memory-master",
+      "gitee": "https://gitee.com/cp3d1455926-svg/memory-master"
+    }
+  }
 }
