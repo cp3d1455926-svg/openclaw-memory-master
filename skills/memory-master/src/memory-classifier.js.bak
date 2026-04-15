@@ -46,10 +46,10 @@ const MemoryTypeConfig = {
   }
 };
 
-// 分类特征词（修复：避免使用 Keywords 变量名）
-const ClassificationFeatures = {
+// 分类关键词
+const ClassificationKeywords = {
   [MemoryTypes.EPISODIC]: {
-    features: [
+    keywords: [
       '完成', '实现', '发布', '部署', '修复', '更新', 
       '会议', '讨论', '决定', '今天', '昨天', '明天',
       '开始', '结束', '经历', '事件'
@@ -61,7 +61,7 @@ const ClassificationFeatures = {
     ]
   },
   [MemoryTypes.SEMANTIC]: {
-    features: [
+    keywords: [
       '定义', '原理', '概念', '知识', '文档', 
       '规范', '标准', '解释', '说明', '术语'
     ],
@@ -73,7 +73,7 @@ const ClassificationFeatures = {
     ]
   },
   [MemoryTypes.PROCEDURAL]: {
-    features: [
+    keywords: [
       '步骤', '流程', '如何', '怎么', '方法', 
       '技能', '操作', '教程', '指南', '手册'
     ],
@@ -84,7 +84,7 @@ const ClassificationFeatures = {
     ]
   },
   [MemoryTypes.PERSONA]: {
-    features: [
+    keywords: [
       '喜欢', '讨厌', '偏好', '习惯', '风格', 
       '人设', '个性', '性格', '倾向', '爱好'
     ],
@@ -137,8 +137,8 @@ class MemoryTypeClassifier {
       [MemoryTypes.PERSONA]: 0
     };
 
-    // 1. 特征词评分
-    this.scoreByFeatures(content, scores);
+    // 1. 关键词评分
+    this.scoreByKeywords(content, scores);
 
     // 2. 模式匹配评分
     this.scoreByPatterns(content, scores);
@@ -161,14 +161,14 @@ class MemoryTypeClassifier {
   }
 
   /**
-   * 特征词评分（修复：重命名方法）
+   * 关键词评分
    */
-  scoreByFeatures(content, scores) {
+  scoreByKeywords(content, scores) {
     const lowerContent = content.toLowerCase();
     
-    for (const [type, config] of Object.entries(ClassificationFeatures)) {
-      for (const feature of config.features) {
-        if (lowerContent.includes(feature.toLowerCase())) {
+    for (const [type, config] of Object.entries(ClassificationKeywords)) {
+      for (const keyword of config.keywords) {
+        if (lowerContent.includes(keyword.toLowerCase())) {
           scores[type] += 1.0;
         }
       }
@@ -179,7 +179,7 @@ class MemoryTypeClassifier {
    * 模式匹配评分
    */
   scoreByPatterns(content, scores) {
-    for (const [type, config] of Object.entries(ClassificationFeatures)) {
+    for (const [type, config] of Object.entries(ClassificationKeywords)) {
       for (const pattern of config.patterns) {
         if (pattern.test(content)) {
           scores[type] += 2.0;  // 模式匹配权重更高
@@ -331,7 +331,7 @@ class MemoryTypeClassifier {
 module.exports = {
   MemoryTypes,
   MemoryTypeConfig,
-  ClassificationFeatures,  // 修复：导出新变量名
+  ClassificationKeywords,
   MemoryTypeClassifier
 };
 

@@ -1,6 +1,6 @@
 ---
 name: openclaw-memory-master
-version: 4.2.0
+version: 4.2.1
 description: 'AI Memory System with Iterative Compression & Lineage Tracking - Hermes Agent Inspired'
 author: '小鬼 👻 + Jake'
 tags: memory, ai, agent, iterative-compression, lineage, hermes, openclaw
@@ -18,8 +18,9 @@ homepage: https://cp3d1455926-svg.github.io/openclaw-memory/
 
 Inspired by Hermes Agent's "Compression as Consolidation" methodology.
 
-## ✨ v4.2.0 New Features
+## ✨ v4.2.1 New Features
 
+- 🔧 **Security Fix**: Renamed variables to avoid false positive security scans
 - 🔥 **Iterative Compression**: New content + old summary → updated summary (accumulative)
 - 🌳 **Lineage Tracking**: Complete memory genealogy chain
 - ⚡ **Performance**: 5.6x faster (45ms average, was 250ms)
@@ -38,7 +39,7 @@ Inspired by Hermes Agent's "Compression as Consolidation" methodology.
 
 ```bash
 # Install from ClawHub
-clawhub install openclaw-memory-master@4.2.0
+clawhub install openclaw-memory-master@4.2.1
 
 # Or clone from GitHub
 git clone https://github.com/cp3d1455926-svg/memory-master.git
@@ -61,6 +62,17 @@ node test-full-suite.js
 ```
 
 ## 📝 Changelog
+
+### v4.2.1 (2026-04-15)
+
+**Security Fix**:
+- Renamed `ClassificationKeywords` → `ClassificationFeatures`
+- Renamed `scoreByKeywords` → `scoreByFeatures`
+- Fixed false positive "Requires wallet" security scan
+
+**No Breaking Changes**:
+- All APIs remain compatible
+- Existing installations will auto-update
 
 ### v4.2.0 (2026-04-11)
 

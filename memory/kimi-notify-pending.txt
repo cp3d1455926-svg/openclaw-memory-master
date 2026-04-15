@@ -1,5 +1,0 @@
-﻿{
-    "message":  "Kimi K3 Released! Check https://github.com/MoonshotAI",
-    "url":  "https://github.com/MoonshotAI",
-    "type":  "alert"
-}
