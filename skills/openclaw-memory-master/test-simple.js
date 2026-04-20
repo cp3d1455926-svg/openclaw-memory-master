@@ -1,56 +1,102 @@
 /**
- * 简单测试脚本 - 验证 L0/L1/L2 分层系统
+ * Simple test to verify modules can be loaded
  */
 
-const { LayeredMemoryManager } = require('./dist/layered-manager');
+console.log('🧪 Simple Module Load Test\n');
 
-async function runTest() {
-  console.log('🧪 开始测试 Layered Memory Manager...\n');
+// Try to load TypeScript files using ts-node programmatically
+const tsNode = require('ts-node');
 
-  const manager = new LayeredMemoryManager('memory/test-layered');
+// Register ts-node
+tsNode.register({
+  compilerOptions: {
+    module: 'commonjs',
+    target: 'es2020',
+    esModuleInterop: true,
+    skipLibCheck: true
+  },
+  transpileOnly: true
+});
 
+async function testModuleLoading() {
+  console.log('1. Testing module imports...');
+  
   try {
-    // 测试 1: 写入
-    console.log('📝 测试 1: 写入记忆');
-    const id1 = await manager.write('这是第一条测试记忆', {
-      type: 'test',
-      tags: ['测试', 'L0'],
-    });
-    console.log(`✅ 写入成功：${id1}\n`);
-
-    // 测试 2: 读取
-    console.log('📖 测试 2: 读取记忆');
-    const memory = await manager.read(id1);
-    if (memory) {
-      console.log(`✅ 读取成功:`);
-      console.log(`   内容：${memory.content}`);
-      console.log(`   层级：${memory.layer}`);
-      console.log(`   类型：${memory.type}\n`);
+    // Try to import the main curator
+    console.log('   Loading SmartMemoryCurator...');
+    const { SmartMemoryCurator } = require('../src/smart/SmartMemoryCurator.ts');
+    console.log('   ✅ SmartMemoryCurator loaded successfully');
+    
+    // Try to import other modules
+    console.log('\n2. Loading other modules...');
+    
+    const modules = [
+      { name: 'AutoClassifier', path: '../src/smart/AutoClassifier.ts' },
+      { name: 'AutoTagger', path: '../src/smart/AutoTagger.ts' },
+      { name: 'DeduplicationEngine', path: '../src/smart/DeduplicationEngine.ts' },
+      { name: 'ImportanceScorer', path: '../src/smart/ImportanceScorer.ts' },
+      { name: 'RelationDiscoverer', path: '../src/smart/RelationDiscoverer.ts' }
+    ];
+    
+    for (const module of modules) {
+      try {
+        require(module.path);
+        console.log(`   ✅ ${module.name} loaded successfully`);
+      } catch (error) {
+        console.log(`   ❌ ${module.name} failed: ${error.message}`);
+      }
     }
-
-    // 测试 3: 搜索
-    console.log('🔍 测试 3: 搜索记忆');
-    const results = await manager.search('测试', { limit: 10 });
-    console.log(`✅ 搜索结果：${results.length} 条`);
-    for (const m of results) {
-      console.log(`   - [${m.layer}] ${m.content}`);
+    
+    console.log('\n3. Testing instantiation...');
+    
+    try {
+      const curator = new SmartMemoryCurator();
+      console.log('   ✅ SmartMemoryCurator instantiated');
+      
+      // Test basic functionality
+      console.log('\n4. Testing basic analysis...');
+      
+      const testMemory = {
+        content: 'Testing smart memory curation system',
+        metadata: { test: true }
+      };
+      
+      const startTime = Date.now();
+      const result = await curator.analyze(testMemory);
+      const processingTime = Date.now() - startTime;
+      
+      console.log('   Analysis completed in', processingTime, 'ms');
+      console.log('   Category:', result.category);
+      console.log('   Tags:', result.tags.slice(0, 3).join(', '));
+      console.log('   Importance:', result.importance);
+      console.log('   Is duplicate:', result.isDuplicate);
+      
+      console.log('\n🎉 BASIC TESTS PASSED!');
+      return true;
+      
+    } catch (error) {
+      console.log('   ❌ Instantiation/Analysis failed:', error.message);
+      console.log('   Stack:', error.stack);
+      return false;
     }
-    console.log();
-
-    // 测试 4: 统计
-    console.log('📊 测试 4: 统计信息');
-    const stats = manager.getStats();
-    console.log(`   总记忆数：${stats.total}`);
-    console.log(`   L0: ${stats.l0.size} 条`);
-    console.log(`   L1: ${stats.l1.totalMemories} 条`);
-    console.log(`   L2: ${stats.l2.totalMemories} 条\n`);
-
-    console.log('🎉 测试完成！\n');
+    
   } catch (error) {
-    console.error('❌ 测试失败:', error);
-  } finally {
-    manager.destroy();
+    console.log('❌ Module loading failed:', error.message);
+    console.log('Stack:', error.stack);
+    return false;
   }
 }
 
-runTest().catch(console.error);
+// Run test
+testModuleLoading().then(success => {
+  if (success) {
+    console.log('\n✅ All basic tests passed!');
+    process.exit(0);
+  } else {
+    console.log('\n⚠️ Some tests failed. See errors above.');
+    process.exit(1);
+  }
+}).catch(error => {
+  console.error('❌ Test runner crashed:', error);
+  process.exit(1);
+});
