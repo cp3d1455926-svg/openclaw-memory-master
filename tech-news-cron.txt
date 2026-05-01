@@ -1,4 +1,0 @@
-# 科技晚报生成任务
-# 每天19:00执行
-
-0 19 * * * cd C:\Users\shenz\.openclaw\workspace && openclaw run generate-tech-news

@@ -1,7 +1,0 @@
-﻿{
-  "status": "success",
-  "query": "",
-  "result": "浣犲ソ锛佹垜鏄皬楝?(Little Ghost)锛屼綘鐨?AI 鍔╂墜锛佹垜宸叉敹鍒颁綘鐨勬寚浠ゃ€傚ぉ鐚簿鐏垫ˉ鎺ュ姛鑳戒紭鍖栫増娴嬭瘯鎴愬姛锛?,
-  "timestamp": "2026-04-04T16:01:44Z",
-  "source": "openclaw-optimized"
-}

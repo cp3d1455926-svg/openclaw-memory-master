@@ -1,4 +1,0 @@
-// Notification delivered to user (WeCom auth expired) - 2026-04-13 21:07
-// Original alert from: 2026-04-10T22:58:14Z
-// URL: https://github.com/deepseek-ai
-// User notified about auth expiration issue
